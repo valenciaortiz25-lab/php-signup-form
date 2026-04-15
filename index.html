@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Signup Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h2>Signup Form</h2>
+<div class="container">
+    <h2>Signup Form</h2>
 
-<form action="process.php" method="POST">
+    <form action="process.php" method="POST">
+        <label>Full Name:</label>
+        <input type="text" name="fullname" required>
 
-    <label>Full Name:</label><br>
-    <input type="text" name="fullname" required><br><br>
+        <label>Email:</label>
+        <input type="email" name="email" required>
 
-    <label>Email:</label><br>
-    <input type="email" name="email" required><br><br>
+        <label>Password:</label>
+        <input type="password" name="password" required>
 
-    <label>Password:</label><br>
-    <input type="password" name="password" required><br><br>
-
-    <button type="submit">Sign Up</button>
-
-</form>
+        <button type="submit">Sign Up</button>
+    </form>
+</div>
 
 </body>
 </html>
